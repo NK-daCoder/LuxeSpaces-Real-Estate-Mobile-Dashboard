@@ -1,9 +1,19 @@
 import { SafeAreaView } from "react-native-safe-area-context";
-import "./global.css"
+import "./global.css";
+import "react-native-gesture-handler";
 import { Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import { NavigationContainer } from "@react-navigation/native";
+
+const TabGroup = () => {
+  return (
+    <NavigationContainer>
+
+    </NavigationContainer>
+  )
+}
  
-export default function App() {
+const App = () => {
   return (
     <SafeAreaView>
       <View className="flex-1 items-center justify-center bg-white border border-red-500">
@@ -15,3 +25,5 @@ export default function App() {
     </SafeAreaView>
   );
 }
+
+export default App;
